@@ -1,0 +1,15 @@
+version: "3"
+services:
+  php:
+    image: php:7.4.32-fpm-alpine3.15
+    container_name: php74
+    restart: always
+    cap_add:
+      - SYS_PTRACE
+    ports:
+      - "9000:9000"
+    stdin_open: true
+    tty: true
+    volumes:
+     - $PWD/web:/usr/share/nginx/html
+

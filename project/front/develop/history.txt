@@ -1,0 +1,996 @@
+    1  rm -rf test/
+    2  ls
+    3  git config
+    4  git config --global push.default simple
+    5  cd TeamDev_SliverBakery/
+    6  git push
+    7  git config git config --global 
+    8  git config --global 
+    9  git remote -v
+   10  git remote set-url origin --push --add ecccomp@ecccomp.git.backlog.jp:/2022_SYS2_IESKA_A/TeamDev_SliverBakery.git
+   11  git remote -v
+   12  eval `ssh-agent`
+   13  ssh-add /root/.ssh/github
+   14  branch
+   15  git branch
+   16  git push
+   17  cd 
+   18  ls
+   19  cd /home/koumoto/TeamDev_SliverBakery/project/front/
+   20  ls
+   21  ll
+   22  cd develop/
+   23  sl
+   24  kls
+   25  ls
+   26  git fetch
+   27  git pull
+   28  ls
+   29  cd src/
+   30  ls
+   31  cd icon/
+   32  ls
+   33  wget https://github.com/prometheus/node_exporter/releases/download/v1.4.0/node_exporter-1.4.0.linux-amd64.tar.gz
+   34  tar -zxpf node_exporter-1.4.0.linux-amd64.tar.gz 
+   35  ls
+   36  mv node_exporter-1.4.0.linux-amd64/node_exporter /usr/sbin/
+   37  rm -rf node_exporter-1.4.0.linux-amd64 node_exporter-1.4.0.linux-amd64.tar.gz 
+   38  ls
+   39  cat <<EOF > /etc/systemd/system/node_exporter.service
+   40  [Unit]
+   41  Description=Node Exporter
+   42  [Service]
+   43  User=root
+   44  EnvironmentFile=/etc/node_exporter.conf
+   45  ExecStart=/usr/sbin/node_exporter $OPTIONS
+   46  Restart=always
+   47  [Install]
+   48  WantedBy=multi-user.target
+   49  EOF
+   50  echo "OPTIONS=\"--collector.tcpstat --no-collector.zfs --no-collector.wifi\"" > /etc/node_exporter.conf
+   51  systemctl enable --now node_exporter.service
+   52  echo $PATH
+   53  ls
+   54  cd /home/koumoto/TeamDev_SliverBakery/project/front/
+   55  ls
+   56  cd develop/
+   57  sl
+   58  ls
+   59  git status
+   60  cd
+   61  ls
+   62  cd TeamDev_SliverBakery/
+   63  ls
+   64  cd pr
+   65  cd project/
+   66  ls
+   67  git branch
+   68  git checkout master
+   69  git branch
+   70  ls
+   71  mkdir monitoring
+   72  ls
+   73  cd monitoring/
+   74  ls
+   75  vim docker-compose.yml
+   76  netstat -tunlp
+   77  netstat -tunlp | grep "9090"
+   78  netstat -tunlp | grep "9080"
+   79  ls
+   80  docker-compose up -d
+   81  netstat -tunlp
+   82  cd
+   83  ls
+   84  systemctl status firewalld
+   85  systemctl stop firewalld
+   86  systemctl status firewalld
+   87  ls
+   88  cd TeamDev_SliverBakery/
+   89  cd
+   90  cd TeamDev_SliverBakery/
+   91  ls
+   92  cd project/
+   93  ls
+   94  git add monitoring/
+   95  git commit -m ":memo: : add cadvisor docker container monitoring system to monitoring this project"
+   96  git branch
+   97  git remote --list
+   98  git remote
+   99  docker container ps
+  100  ls
+  101  cd monitoring/
+  102  ls
+  103  cat docker-compose.yml 
+  104  git pushj
+  105  git push
+  106  eval `ssh-agent`
+  107  ssh-add /root/.ssh/github
+  108  git push
+  109  ped
+  110  pwd
+  111  git branch
+  112  cd /root/.ssh/
+  113  ls
+  114  vim authorized_keys 
+  115  docker-compose ps
+  116  cd project5
+  117  docker-compose ps
+  118  exit
+  119  dir
+  120  ls]
+  121  ls
+  122  cd .ssh/
+  123  ls
+  124  exit
+  125  cd project4
+  126  docker-compose ps
+  127  docker-compose up -d
+  128  cd ../project3
+  129  docker-compose up -d
+  130  docker-compose build
+  131  docker-compose ps
+  132  docker-compose up -d
+  133  docker ps
+  134  docker-compose build
+  135  docker-compose up -d
+  136  cd project4
+  137  docker-compose ps
+  138  docker-compose up -d
+  139  cd ..
+  140  cp -R project.bak project6
+  141  cd project6
+  142  ls
+  143  cd project6
+  144  docker-compose build
+  145  sudo docker-compose run --rm node sh -c "npm install -g create-react-app && create-react-app project6"
+  146  sudo docker-compose run --rm node sh -c "npm install -g create-react-app && create-react-app project6"
+  147  docker-compose ps
+  148  docker-compose run --rm node sh -c "npm install axios"
+  149  realm join rinrin.net -U lin
+  150  systemctl restart sssd
+  151  systemctl status sssd
+  152  systemctl restart sssd
+  153  su lin
+  154  su koumoto
+  155  su lin
+  156  su koumoto
+  157  sd lin
+  158  su lin
+  159  \exit
+  160  cd project6
+  161  docker-compose ps
+  162  ls
+  163  cd .ssh/
+  164  ls
+  165  vim authorized_keys 
+  166  ls
+  167  vim authorized_keys 
+  168  ls -al 
+  169  vim known_hosts 
+  170  w
+  171  cat /etc/sudoers
+  172  ls
+  173  chmod 644 authorized_keys 
+  174  ls
+  175  ll
+  176  catr
+  177  cat
+  178  vim authorized_keys 
+  179  cat known_hosts 
+  180  ls
+  181  cat authorized_keys 
+  182  vim authorized_keys 
+  183  mv /home/koumoto/TeamDev_SliverBakery/document/id_rsa.pub .
+  184  lks
+  185  ls
+  186  cat id_rsa.pub >> authorized_keys 
+  187  cat authorized_keys 
+  188  ls
+  189  rm -rf id_rsa.pub 
+  190  cd
+  191  cd /etc/sudoers.d/
+  192  ls
+  193  cat aduser
+  194  cd
+  195  cd /home/koumoto/TeamDev_SliverBakery/project/front/
+  196  ls
+  197  cd develop/
+  198  ls
+  199  cd project4
+  200  ls
+  201  docker-compose ps
+  202  docker-compose restart
+  203  ls
+  204  cd ..
+  205  docker container ps
+  206  ls
+  207  cd project6
+  208  ls
+  209  docker container ps
+  210  docker-compose build
+  211  docker-compose run --rm node sh -c "npm install -g create-react-app && create-react-app project1"
+  212  docker-compose run --rm node sh -c "npm install -g create-react-app && create-react-app project6"
+  213  service docker restart
+  214  docker-compose run --rm node sh -c "npm install -g create-react-app && create-react-app project6"
+  215  cd ..
+  216  cd project5
+  217  docker-compose up -d
+  218  cd ..
+  219  cd project6
+  220  la
+  221  docker-compose up -d
+  222  docker-compose ps
+  223  ls
+  224  cd ..
+  225  ls
+  226  vim README.md
+  227  ls
+  228  touch README.md
+  229  cd ..
+  230  ls
+  231  cd develop/
+  232  ls
+  233  cd 
+  234  cd TeamDev_SliverBakery/
+  235  ls
+  236  git pull
+  237  eval `ssh-agent`
+  238  ssh-add ../.ssh/github
+  239  git pul;l
+  240  git pull
+  241  ls
+  242  cd project/front/develop/
+  243  ls
+  244  cat README.md 
+  245  git push
+  246  git pull
+  247  git push
+  248  git checkout front
+  249  git branch
+  250  git pull
+  251  git push
+  252  git checkout master
+  253  git branch
+  254  git pull
+  255  git push
+  256  ls
+  257  cd /home/lin/
+  258  ls
+  259  ll
+  260  git add README.md 
+  261  git commit -m ":memo: create README.md with create project usage"
+  262  eval `ssh-agent`
+  263  ssh-add /root/.ssh/github
+  264  git push
+  265  ls
+  266  git add README.md 
+  267  git commit -m ":pencil2: modify directory structure tree"
+  268  git config -list
+  269  git config --list
+  270  git push
+  271  git branch
+  272  git config --list
+  273  eval `ssh-agent`
+  274  git checkout master
+  275  ssh-add /root/.ssh/github
+  276  git checkout master
+  277  git branch
+  278  exit
+  279  docker-compose os'
+  280  docker-compose ps
+  281  exit
+  282  cd /etc/sudoers.d
+  283  ls
+  284  vim aduser 
+  285  ls
+  286  groupadd fdev
+  287  usermod -G fdev lin
+  288  chown -R :fdev /home/koumoto/
+  289  ls -al /home/koumoto/
+  290  chmod -R 770 /home/koumoto/
+  291  ls
+  292  ls -al /home/koumoto/
+  293  su lin
+  294  ls
+  295  cd TeamDev_SliverBakery/
+  296  ls
+  297  git branch
+  298  git branch -a
+  299  history | grep "git checkout"
+  300  git checkout back
+  301  git branch
+  302  git status
+  303  git add -A
+  304  git commit -m ":pencil2: make up for forgotten files commit"
+  305  git branch
+  306  git push
+  307  eval `ssh-agnet`
+  308  eval `ssh-agent`
+  309  ssh-add ../.ssh/github
+  310  ls
+  311  git push
+  312  git checkout back
+  313  git branch
+  314  ls
+  315  cd project/
+  316  ls
+  317  cd back/
+  318  ls
+  319  git status
+  320  git checout master
+  321  git checkout master
+  322  ls
+  323  cd ..
+  324  cd monitoring/
+  325  ls
+  326  git clone https://github.com/ippanpeople/node_exporter_installer.git
+  327  ls
+  328  mv node_exporter_installer/node_exporter.sh .
+  329  rm -rf node_exporter_installer/
+  330  ls
+  331  git node_exporter.sh ls
+  332  git add node_exporter.sh 
+  333  git commit -m ":memo: make monitoring tool node_exporter as a shell script"
+  334  git push
+  335  who
+  336  who
+  337  su koumoto
+  338  cat > pts/2
+  339  who
+  340  tty
+  341  cat > /dev/pts/2
+  342  who
+  343  w
+  344  cat > /dev/pts/10
+  345  cat > /dev/pts/9
+  346  exit
+  347  ping 10.0.1.220
+  348  curl 10.0.1.220/users
+  349  curl 10.0.1.220
+  350  ping 10.0.1.220
+  351  ping 10.0.1.220/users
+  352  curl 10.0.1.220/users
+  353  ls /etc/user
+  354  ls /etc/hosts
+  355  curl google.com
+  356  curl https://jsonplaceholder.typicode.com/todos/1
+  357  ping http://10.0.1.220/users
+  358  ping https://10.0.1.220/users
+  359  curl https://10.0.1.220/users
+  360  curl https://10.0.1.220:3000/users
+  361  curl -X GET http://10.0.1.220:3000/users
+  362  curl https://jsonplaceholder.typicode.com/todos/1
+  363  curl http://127.0.0.1:3000/users
+  364  curl http://10.0.1.220:3000/users
+  365  ping 10.0.1.220
+  366  curl http://10.0.1.220:3000/users
+  367  ping 10.0.1.220
+  368  curl http://10.0.1.220:3000/users
+  369  ping 10.0.1.122
+  370  ping 10.0.1.1
+  371  ping 10.0.1.220
+  372  curl 10.0.1.220/users
+  373  curl 10.0.1.220
+  374  curl 10.0.1.220:8000
+  375  curl 10.0.1.220:3000
+  376  curl 10.0.1.220:3000/users
+  377  curl 10.0.1.220:3000
+  378                     cleaae
+  379  clar
+  380  cllear
+  381  clear
+  382  kfj hl;3rfre4@[ bgte4;lst４bgt３g
+  383  clear
+  384  history
+  385  history --help
+  386  curl 10.0.1.220:3000
+  387  curl 10.0.1.220:3000/users
+  388  cd project6
+  389  docker-compose ps
+  390  rpm -qa | grep axios
+  391  exit
+  392  exit
+  393  cd .ssh/
+  394  ls
+  395  vim known_hosts 
+  396  cd /home/tinn/.ssh/
+  397  ls -al
+  398  chmod 600 authorized_keys 
+  399  ls
+  400  ls -al
+  401  cat /home/tinn/.ssh/authorized_keys 
+  402  vim authorized_keys 
+  403  ls
+  404  cd /root/.ssh/
+  405  vim authorized_keys 
+  406  ls
+  407  cd /home/tinn/.ssh/
+  408  ls
+  409  cat t.pub > authorized_keys 
+  410  rm -rf t.pub 
+  411  ls
+  412  cat authorized_keys 
+  413  cd /etc/sudoers.d/
+  414  ls
+  415  vim aduser 
+  416  useradd -G fdev tinn
+  417  usermod -G fdev tinn
+  418  vim aduser 
+  419  who
+  420  cat > /etc/pts/1 
+  421  cat > /dev/pts/1
+  422  who
+  423  cat > /dev/pts/1 
+  424  cat > /dev/pts/4
+  425  cd project5
+  426  docker-compose ps
+  427  hostname
+  428  clear
+  429  ls
+  430  cd front/develop/project5
+  431  ls
+  432  docker-compose restart
+  433  docker-compose ps
+  434  docker-compose restart
+  435  docker-compose ps
+  436  docker exec -it project5_node_1 /bin/bash
+  437  docker exec -it project5_node_1 /sh
+  438  docker exec -it project5_node_1 sh
+  439  cd project6
+  440  docker-compose ps
+  441  curl http://10.0.1.220:3000/users/index
+  442  cd project6
+  443  docker-compose ps
+  444  exit
+  445  cd project6
+  446  cd project5
+  447  cd app
+  448  cd project5/
+  449  ls
+  450  docker-compose run --rm node sh -c "npm install react-router-dom"
+  451  docker-compose run --rm node sh -c "npm i -S react-router-dom"
+  452  cd ../project5/6
+  453  cd ../../../project6
+  454  cd app/
+  455  cd project6/
+  456  pwd
+  457  docker-compose restart
+  458  docker-compose ps
+  459  cd ../../
+  460  cd ../
+  461  cd project5
+  462  cd app/
+  463  cd project5/
+  464  docker-compose restart
+  465  docker-compose ps
+  466  docker exec -it project5_node_1 /bin/bash
+  467  ls
+  468  npm install react-router-dom
+  469  npm i -S react-router-dom
+  470  pwd
+  471  ls
+  472  cd src
+  473  ls
+  474  cd ..
+  475  docker-compose run --rm node sh -c "npm install --save react-router-dom"
+  476  pwd
+  477  cd ../../../
+  478  ls
+  479  pwd
+  480  cd /home/koumoto/TeamDev_SliverBakery/project/front/develop/project5/app/project5/src
+  481  ls
+  482  git add App.js
+  483  git commit -m ":bug: App.jsを修正しました。エラー内容: Switchのnot found 修正内容: SwitchをRoutesに変更"
+  484  git brunch
+  485  git branch
+  486  git push
+  487  eval ssh-agent
+  488  eval `ssh-agent`
+  489  git push
+  490  cd ..
+  491  git push
+  492  eval `ssh-agent`
+  493  ssh-add /home/koumoto/.ssh/backlog
+  494  git push
+  495  git add project
+  496  git add project5
+  497  git commit -m ":pencil2: メニューバーのページ遷移"
+  498  eval `ssh-agent`
+  499  history
+  500  ssh-add /home/koumoto/.ssh/backlog
+  501  git push
+  502  cd /home/koumoto/TeamDev_SliverBakery/project/front/develop/
+  503  kls
+  504  ls
+  505  cd project5
+  506  ls
+  507  cd app/
+  508  ls
+  509  cd project5/
+  510  ls
+  511  cd node_modules/
+  512  ls
+  513  ls | grep react-router-dom/
+  514  rm -rf react-router-dom/
+  515  cd ..
+  516  ls
+  517  rm -rf node_modules/
+  518  cd ..
+  519  ls
+  520  docker-compose ps
+  521  docker exec -it project5_node_1 /bin/bas
+  522  docker exec -it project5_node_1 /bin/bash
+  523  docker exec -it project5_node_1 sh
+  524  cd ..
+  525  ls
+  526  git add project5
+  527  git commit -m ":pencil2: 一応念の為に保存"
+  528  ls
+  529  eval `ssh-agney`
+  530  eval `ssh-agnet`
+  531  eval `ssh-agent`
+  532  ssh-add /home/koumoto/.ssh/backlog
+  533  git config --list
+  534  git branch
+  535  git push
+  536  cd
+  537  cd TeamDev_SliverBakery/
+  538  git branch
+  539  git config --list
+  540  ;s
+  541  ls
+  542  cd TeamDev_SliverBakery/
+  543  git branch
+  544  git checkout front
+  545  git pull
+  546  eval `ssh-agent`
+  547  ssh-add /root/.ssh/github
+  548  git pull
+  549  git push
+  550  git checkout master
+  551  git branch
+  552  git pull
+  553  git push
+  554  cd /root/
+  555  ls
+  556  cd TeamDev_SliverBakery/
+  557  cd project/front/develop/src2/商品画像/
+  558  cd project/front/develop/src2/
+  559  cd 商品画像/
+  560  ls
+  561  cd hotpot/
+  562  ls
+  563  cd ..
+  564  code .
+  565  cd project5
+  566  cd appp
+  567  cd app
+  568  cd project5/
+  569  cd src/
+  570  docker-compose run --rm node sh -c "npm install path-to-regexp --save"
+  571  ls
+  572  git add project5
+  573  git commit -m ":pencil2:[/]にaccessしたら[/home]にredirectするようにしました"
+  574  history
+  575  eval `ssh-agent`
+  576  ssh-add /root/.ssh/github
+  577  git push
+  578  ls
+  579  git add project5
+  580  git commit -m ":pencil2:header & footer のlayoutを変更。"
+  581  history
+  582  eval `ssh-agent`
+  583  ssh-add /root/.ssh/github
+  584  git push
+  585  cd project5
+  586  ls
+  587  docker-compose 
+  588  docker-compose ps
+  589  docker-compose restart
+  590  docker-compose ps
+  591  docker-compose stop
+  592  docker-compose start
+  593  docker-compose restart
+  594  docker-compose ps
+  595  docker-compose restart
+  596  docker-compose ps
+  597  docker-compose start
+  598  docker-compose ps
+  599  docker-compose start
+  600  docker-compose ps
+  601  docker-compose restart
+  602  docker-compose ps
+  603  docker-compose start
+  604  docker-compose ps
+  605  docker logs -f project5_node_1
+  606  cat /proc/sys/fs/inotify/max_user_watches
+  607  echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf
+  608  sudo sysctl -p
+  609  docker-compose start
+  610  docker-compose ps
+  611  docker-compose restart
+  612  docker-compose ps
+  613  docker-compose restart
+  614  docker-compose ps
+  615  finger
+  616  who 
+  617  yum install -y finger
+  618  finger
+  619  talk pts/12
+  620  yum install -y talk
+  621  talk pts/12
+  622  cat .ssh/authorized_keys 
+  623  vim .ssh/authorized_keys 
+  624  cd project5
+  625  docker-compose restart
+  626  docker-compose ps
+  627  docker-compose restart
+  628  docker-compose ps
+  629  docker-compose restart
+  630  docker-compose ps
+  631  ls
+  632  cd TeamDev_SliverBakery/
+  633  eval `ssh-agent`
+  634  ssh-add /root/.ssh/github
+  635  ls
+  636  git pull
+  637  git checkout front
+  638  git branch
+  639  git pull
+  640  git push
+  641  git checkout master
+  642  git branch
+  643  git push
+  644  cd project5
+  645  docker-compose restart
+  646  docker-compose ps
+  647  rails db
+  648  cd /root/
+  649  cd TeamDev_SliverBakery/
+  650  ls
+  651  cd project/
+  652  ls
+  653  cd front/
+  654  ls
+  655  cd develop/
+  656  ls
+  657  cp 
+  658  cp --help
+  659  cp -R src2 project5/app/project5/public/
+  660  cd project5
+  661  cd app
+  662  ls
+  663  cd project5/
+  664  ls
+  665  cd public/
+  666  l
+  667  ls
+  668  pwd
+  669  cd ru4
+  670  cd project4
+  671  cd app/
+  672  cd project4/
+  673  cd src
+  674  docker-compose run --rm node sh -c "npm -y install react-hook-form"
+  675  cd ..
+  676  docker-compose ps
+  677  docker-compose start
+  678  docker-compose ps
+  679  cd /home/koumoto/TeamDev_SliverBakery/project/front/
+  680  ls
+  681  cd develop/
+  682  ls
+  683  cd project5
+  684  ls
+  685  cd app/
+  686  ls
+  687  cd project5/
+  688  ls
+  689  cd src/
+  690  ls
+  691  cd components/
+  692  ls
+  693  cd /home/koumoto/TeamDev_SliverBakery/project/front/
+  694  ls
+  695  cd develop/
+  696  ls
+  697  cd project5
+  698  ls
+  699  cd ..
+  700  ls -al
+  701  cd project5
+  702  ls
+  703  cd app/
+  704  ls
+  705  cd project5/
+  706  ls
+  707  cd src/
+  708  ls
+  709  ls -al
+  710  cd ..
+  711  cd..
+  712  cd ..
+  713  ls
+  714  chown -R root:fdev project5
+  715  chmod -R 770 project5
+  716  cd project5/app/project5/src/
+  717  ls -al
+  718  who
+  719  w
+  720  netstat
+  721  netstat tunlp
+  722  netstat
+  723  netstat -tunlp
+  724  tcp6       0      0 :::9100                 :::*                    LISTEN      7759/node_exporter
+  725  tcp6       0      0 :::22                   :::*                    LISTEN      1058/sshd
+  726  tcp6       0      0 :::9080                 :::*                    LISTEN      9442/docker-proxy
+  727  tcp6       0      0 ::1:25                  :::*                    LISTEN      1392/master
+  728  tcp6       0      0 :::3003                 :::*                    LISTEN      29451/docker-proxy
+  729  tcp6       0      0 :::3004                 :::*                    LISTEN      24451/docker-proxy
+  730  cd /home/koumoto/TeamDev_SliverBakery/project/front/develop/
+  731  ls
+  732  cd project
+  733  cd project5
+  734  ls
+  735  docker-compose restart
+  736  cd project5
+  737  docker-compose restaret
+  738  docker-compose restart
+  739  docker-compose ps
+  740  docker-compose restart
+  741  docker-compose ps
+  742  ss -atn
+  743  ss -atn | grep 3000
+  744  ss -t
+  745  ss -t | grep 3000
+  746  docker-compose restart
+  747  docker-compose ps
+  748  docker-compose restart
+  749  docker-compose ps
+  750  cd project5
+  751  docker-compose restart
+  752  docker-compose ps
+  753  docker-compose restart
+  754  docker-compose ps
+  755  docker-compose build
+  756  docker build
+  757  cd project5
+  758  docker-compose run --rm node sh -c "yum -y install typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser"
+  759  cd ..
+  760  cd project4
+  761  npm -V
+  762  docker-compose run --rm node sh -c "nm -V"
+  763  cd app
+  764  docker-compose run --rm node sh -c "nm -V"
+  765  docker-compose run --rm node sh -c "npm -V"
+  766  docker-compose run --rm node sh -c "npm install --save-dev ts-migrate"
+  767  cd project4/4
+  768  cd project4
+  769  lls
+  770  vlx
+  771  ls
+  772  npx ts-migrate-full src
+  773  docker-compo
+  774  docker-compose exec node bash
+  775  docker-compose ps
+  776  docker-compose exec project4_node_1 bash
+  777  ls
+  778  docker-compose exec project4_node_1 bash
+  779  docker-compose exec project4_node_1 /bin/bash
+  780  docker compose up -d --build
+  781  docker-compose exec -it  project4_node_1 bash
+  782  exit
+  783  project4_node_1ls
+  784  ls
+  785  cd project
+  786  cd project04
+  787  cd project4
+  788  ls
+  789  docker-compose exec -it  project4_node_1 bash
+  790  ls
+  791  pwd
+  792  make
+  793  make -version
+  794  touch Makefile
+  795  make dev
+  796  npx ts-migrate-full src
+  797  npx ts-migrate-full app
+  798  cd app/
+  799  ls
+  800  npm run ts-ch
+  801  docker compose run --rm node npm run ts-ch
+  802  ls
+  803  cd project4/
+  804  ls
+  805  cat package.json 
+  806  docker ps
+  807  cd ..
+  808  cd project7
+  809  ls
+  810  docker compose up -d --bulid
+  811  docker compose up -d --build
+  812  docker ps
+  813  docker compose run --rm "curl --compressed -o- -L https://yarnpkg.com/install.sh | bash
+  814  docker compose run --rm "curl --compressed -o- -L https://yarnpkg.com/install.sh | bash"
+  815  docker compose run --rm next "curl --compressed -o- -L https://yarnpkg.com/install.sh | bash"
+  816  npm install
+  817  npm init
+  818  apt
+  819  docker compose run --rm next "curl --compressed -o- -L https://yarnpkg.com/install.sh | bash"
+  820  docker compose up -d --bulid
+  821  docker compose up -d --build
+  822  docker compose run --rm next "npx create-next-app src --typescript"
+  823  docker compose up -d --build
+  824  cd /home/ko
+  825  cd /home/koumoto/
+  826  cd TeamDev_SliverBakery/project/front/
+  827  ls
+  828  cd develop/
+  829  ls
+  830  cd next/
+  831  ls
+  832  cat README.md\  
+  833  ls
+  834  cd .
+  835  cd ..
+  836  ls
+  837  exit
+  838  cd next/
+  839  npm install -D tailwindcss postcss autoprefixer
+  840  yarn add -D tailwindcss postcss autoprefixer postcss-nested
+  841  clear
+  842  yarn
+  843  docker compose exec display bash 
+  844  docker compose exec display bash -c "cd projec1  && yarn add -D tailwindcss postcss autoprefixer postcss-nested"
+  845  docker ps
+  846  docker compose exec display bash -c "cd projec1  && yarn add -D tailwindcss postcss autoprefixer postcss-nested"
+  847  docker compose exec display bash -c "cd project1  && yarn add -D tailwindcss postcss autoprefixer postcss-nested"
+  848  docker compose exec display bash -c "cd project1  && yarn tailwindcss init -p"
+  849  docker compose exec display bash -c "cd project1  && yarn add -D eslint-plugin-tailwindcss"
+  850  docker compose exec display bash -c "cd project1  &yarn add -D prettier prettier-plugin-tailwindcss"
+  851  docker compose exec display bash -c "cd project1  && yarn add -D prettier prettier-plugin-tailwindcss"
+  852  git clone https://github.com/ageha734/next.git
+  853  make create
+  854  cd next/
+  855  make create.sh 
+  856  make create
+  857  yarn
+  858  docker-compose run --rm display cd  ls
+  859  docker-compose run --rm display ls
+  860  docker-compose run --rm display cd project1
+  861  docker ps
+  862  docker compose exec display bash -c "cd project1 && make dev"
+  863  docker compose up
+  864  docker compose up -d 
+  865  docker ps
+  866  docker compose exec display bash -c "cd project1 && make dev"
+  867  cd next/
+  868  cd project1/
+  869  docker compose ps
+  870  cd next/
+  871  docker compose restart
+  872  docker compose ps
+  873  yarn dev
+  874  docker ps
+  875  docker compose exec display bash -c "cd project1 && yarn install"
+  876  docker compose exec display bash -c "cd project1 && yarn dev"
+  877  docker compose exec display bash -c "cd project1 && yarn install"
+  878  docker compose exec display bash -c "cd project1 && yarn dev"
+  879  history | grep tailwindcss
+  880  yarn --help
+  881  docker compose exec display bash -c "cd project1 && yarn --help"
+  882  docker compose exec display bash -c "cd project1 && yarn remove -D tailwindcss postcss autoprefixer postcss-nested"
+  883  docker compose exec display bash -c "cd project1 && yarn add -D tailwindcss@latest postcss@latest autoprefixer@latest"
+  884  docker compose exec display bash -c "cd project1 && yarn tailwindcss init -p"
+  885  docker compose exec display bash -c "cd project1 && yarn dev"
+  886  npm
+  887  yarn
+  888  cd next
+  889  docker-compose restart
+  890  docker-compose up -d
+  891  docker-compose restart
+  892  next -V
+  893  Next -V
+  894  next --version
+  895  cd next/
+  896  ls
+  897  history
+  898  ocker compose exec display bash -c "cd project1 && yarn add -D babel-plugin-inline-react-svg"
+  899  docker compose exec display bash -c "cd project1 && yarn add -D babel-plugin-inline-react-svg"
+  900  cd next/
+  901  docker-compose restart
+  902  docker-compose ps
+  903  yarn remove babel
+  904  docker-compose restart
+  905  cd next/
+  906  ls
+  907  cat create.sh 
+  908  cd next
+  909  docker-compose restart
+  910  cd next/
+  911  cd project1/
+  912  cd src/
+  913  cd components/
+  914  cd Footer
+  915  cd ..
+  916  cd src/
+  917  cd icon/
+  918  cd svg/
+  919  cd person-circle.svg 
+  920  cat person-circle.svg 
+  921  cd next/
+  922  cd src
+  923  cd project1/
+  924  cd src/components/src/icon/png/
+  925  ftp 192.168.11.18
+  926  cd next/
+  927  docker-compose restart
+  928  history
+  929  cd next/
+  930  cd project1/
+  931  docker compose exec display bash -c "cd project1 && yarn add axios"
+  932  cd next/
+  933  docker-compose restart
+  934  d
+  935  clear
+  936  cd next/
+  937  yarn dev
+  938  docker-compose restart
+  939  history
+  940  docker compose exec display bash -c "cd project1 && yarn add @material-ui/core @material-ui/icons"
+  941  docker compose exec display bash -c "cd project1 && yarn add next-material-kit"
+  942  cd next/
+  943  docker-compose restart
+  944  docker-compose stop
+  945  docker-compose start
+  946  docker-compose stop
+  947  docker-compose start
+  948  docker-compose stop
+  949  docker-compose start
+  950  docker-compose stop
+  951  docker-compose start
+  952  docker-compose stop & docker-compose start
+  953  docker-compose stop
+  954  docker-compose start
+  955  docker-compose stop
+  956  docker-compose start
+  957  docker-compose stop
+  958  docker-compose start
+  959  docker-compose restart
+  960  cd next/
+  961  history
+  962  docker compose exec display bash -c "cd project1 && yarn add eslint-config-prettier prettier prettier-plugin-organize-imports"
+  963  docker compose exec display bash -c "cd project1 && yarn add daisyui @tailwindcss/typography"
+  964  docker compose exec display bash -c "cd project1 && yarn add eslint-plugin-tailwindcss"
+  965  docker-compose restart
+  966  cd next/
+  967  docker compose exec display bash -c "cd project1 && yarn add use-shopping-cart"
+  968  cd next/
+  969  history
+  970  docker compose exec display bash -c "cd project1 && yarn add nookies"
+  971  cd next/
+  972  history
+  973  docker compose exec display bash -c "cd project1 && yarn add react-cookies"
+  974  docker compose exec display bash -c "cd project1 && yarn add react-cookie"
+  975  docker-compose restart
+  976  cd next/
+  977  yarn add react-cookies cookies
+  978  hoistory
+  979  history
+  980  docker compose exec display bash -c "cd project1 && yarn add react-cookies cookies"
+  981  history | grep "git"
+  982  history | grep "``"
+  983  history | grep "git"
+  984  history > next/history.txt
+  985  git add next
+  986  git commit -m ":pencil2: 詳細画面の分岐"
+  987  eval `ssh-agent`
+  988  ssh-add /home/koumoto/.ssh/backlog
+  989  show ip ssh
+  990  ssh-add /home/koumoto/.ssh/backlog
+  991  git push
+  992  cd ..
+  993  history 
+  994  git add develop
+  995  git commit -m ":pencil2:一応"
+  996  history > develop/history.txt
